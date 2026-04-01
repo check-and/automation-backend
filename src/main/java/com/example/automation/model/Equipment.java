@@ -21,8 +21,8 @@ public class Equipment {
     @Column (nullable = false)
     private String location;
     @Column (nullable = false)
-    private Integer normalMin;
-    private Integer normalMax;
+    private Double normalMin;
+    private Double normalMax;
     @Column (nullable = false)
     private String unit;
 

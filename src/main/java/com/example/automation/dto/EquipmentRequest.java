@@ -5,8 +5,8 @@ public class EquipmentRequest {
     private String name;
     private Integer workshop;
     private String location;
-    private Integer normalMin;
-    private Integer normalMax;
+    private Double normalMin;
+    private Double normalMax;
     private String unit;
 
     public EquipmentRequest() {
@@ -28,13 +28,13 @@ public class EquipmentRequest {
         return location;}
     public void setLocation(String location){
         this.location=location;}
-    public Integer getNormalMin(){
+    public Double getNormalMin(){
         return normalMin;}
-    public void setNormalMin(Integer normalMin){
+    public void setNormalMin(Double normalMin){
     this.normalMin= normalMin;}
-    public Integer getNormalMax(){
+    public Double getNormalMax(){
         return normalMax;}
-    public void setNormalMax(Integer normalMax){
+    public void setNormalMax(Double normalMax){
         this.normalMax=normalMax;}
     public String getUnit(){
         return unit;}
