@@ -11,3 +11,4 @@ WORKDIR /app
 COPY --from=build /app/build/libs/*.jar /app/app.jar
 EXPOSE 8080
 CMD ["sh", "-c", "java -jar /app/app.jar 2>&1 || echo 'Приложение упало с ошибкой'"]
+ENTRYPOINT ["java", "-Xmx256m", "-jar", "/app/app.jar"]
