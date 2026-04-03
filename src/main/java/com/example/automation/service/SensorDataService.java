@@ -90,7 +90,7 @@ public class SensorDataService {
         data2.setNormalMax(request.getNormalMax());
         data2.setUnit(request.getUnit());
         Equipment save = equipmentRepository.save(data2);
-        return data2;
+        return equipmentRepository.save(data2);
     }
 }
 //Теперь нужен метод, который будет принимать SensorDataRequest и возвращать SensorData
