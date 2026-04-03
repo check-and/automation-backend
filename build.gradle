@@ -35,3 +35,6 @@ tasks.bootJar {
 tasks.jar {
     enabled = false
 }
+bootJar {
+    archiveFileName = 'app.jar'
+}
