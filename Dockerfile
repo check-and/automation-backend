@@ -10,4 +10,4 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar /app/app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+CMD ["sh", "-c", "java -jar /app/app.jar 2>&1 || echo 'Приложение упало с ошибкой'"]
